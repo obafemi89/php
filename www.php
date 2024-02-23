@@ -225,7 +225,7 @@ echo '<br>';
 $switchnumber =3;
 switch ($switchnumber) {
     case $switchnumber % 2 ==1;
-        echo 'number is odd'
+        echo 'number is odd';
         break;
     
     default:
@@ -243,9 +243,9 @@ switch ($user_role) {
     case 'admin':
         echo "you have admin privillege";
         break;
-    case "editor"
+    case "editor";
         echo "you are editor privillege ";
-    case "viewe"
+    case "viewe";
         echo "you have viewer privillege ";
     
     default:
@@ -268,17 +268,46 @@ function multiplies($number){
     return $number * $number;
 };
 print '<br>';
- echo multiply(2);
+ echo "multiply"(2);
 
  // a function that convert kilometer to meter 
 
  function km_to_meters($kilometer){
-    return $kilometers * 1000
- };
+    return "$kilometers" * 1000;
+ }
  $kilometers = 10;
  $meters = km_to_meters($kilometers);
  echo "$kilometers kilometers is equal to $meters meters.";
- 
+
+ // loops are used to execute a bloock of code over and over again
+ // type of loop
+ // for loop
+ // for each
+ // while loop
+ // do while loop
+
+ // for loop
+ // print welcome to appclick *10
+
+ // for (expression 1 assigment; expression 2; comparison; expression 3 increment)
+ // }
+ for($number = 1; $number<= 10; $number++){
+    echo "welcome to appclick: '.$number". "<br>";
+ }
+
+ for($num=1; $num <=5;$num++){
+    echo $num."<br>";
+ }
+
+ for($num= 30; $num <= 50; $num++){
+    echo $num."<br>";
+ }
+
+ for($num = 30; $num <= 50; $num++) {
+    if($num % 3 == 0) {
+        echo $num . " ";
+    }
+ }
  
     
     
